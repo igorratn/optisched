@@ -29,4 +29,4 @@ if staff_file and client_file:
         st.download_button("⬇️ Download Schedule", result_df.to_csv(index=False), "schedule.csv", "text/csv")
 
 st.markdown("---")
-st.markdown("Built by Igor Ratner — [Contact](mailto:igorratn@yahoo.com)")
+st.markdown("Built by Igor Ratnere — [Contact](mailto:igorratn@yahoo.com)")
