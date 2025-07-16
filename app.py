@@ -28,5 +28,60 @@ if staff_file and client_file:
 
         st.download_button("⬇️ Download Schedule", result_df.to_csv(index=False), "schedule.csv", "text/csv")
 
+# Help Section
+with st.expander("❓ Help — How to Use OptiSched"):
+    st.markdown("""
+### 📁 What files should I upload?
+
+#### 🧑‍🏫 Tutor Availability (CSV)
+This file should contain:
+- `Name` — Tutor name
+- `Subject` — Subject or topic they can teach
+- `Available Slots` — Semicolon-separated list of times available (e.g., `"Mon 10am;Tue 1pm"`)
+
+**Example:**
+
+| Name  | Subject  | Available Slots              |
+|-------|----------|------------------------------|
+| Alice | Math     | Mon 10am;Tue 1pm;Thu 11am     |
+| Bob   | English  | Mon 9am;Wed 3pm;Fri 10am      |
+
+---
+
+#### 🎓 Student Requests (CSV)
+This file should contain:
+- `Name` — Student name
+- `Subject` — Subject requested
+- `Preferred Slots` — Preferred time (only one per request for now)
+
+**Example:**
+
+| Name  | Subject  | Preferred Slots |
+|-------|----------|------------------|
+| Tom   | Math     | Mon 10am         |
+| Jill  | English  | Wed 3pm          |
+
+---
+
+### 🧠 How does scheduling work?
+
+After uploading both files, click **"Generate Schedule"**.
+
+The system will:
+- Match students to tutors based on subject
+- Match times when both are available
+- Generate a weekly schedule
+
+---
+
+### 💾 Can I download the results?
+
+Yes! After the schedule is displayed, click the **"⬇️ Download Schedule"** button to save it as a CSV file.
+
+---
+
+If you have any questions, feel free to reach out using the contact link below.
+""")
+
 st.markdown("---")
 st.markdown("Built by Igor Ratnere — [Contact](mailto:igorratn@yahoo.com)")
