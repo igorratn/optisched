@@ -1,1 +1,7 @@
+# Ignore Python virtual environments
+scheduler-env/
+.env/
+venv/
+__pycache__/
+*.pyc
 .DS_Store
