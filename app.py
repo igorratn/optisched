@@ -28,7 +28,6 @@ if staff_file and client_file:
 
         st.download_button("⬇️ Download Schedule", result_df.to_csv(index=False), "schedule.csv", "text/csv")
 
-# Help Section
 with st.expander("❓ Help — How to Use OptiSched"):
     st.markdown("""
 ### 📁 What files should I upload?
@@ -45,7 +44,12 @@ This file should contain:
 |-------|----------|------------------------------|
 | Alice | Math     | Mon 10am;Tue 1pm;Thu 11am     |
 | Bob   | English  | Mon 9am;Wed 3pm;Fri 10am      |
+""")
 
+    with open("sample_data/staff.csv", "rb") as f:
+        st.download_button("📥 Download Example Tutor CSV", f, file_name="tutor.csv")
+
+    st.markdown("""
 ---
 
 #### 🎓 Student Requests (CSV)
@@ -60,7 +64,12 @@ This file should contain:
 |-------|----------|------------------|
 | Tom   | Math     | Mon 10am         |
 | Jill  | English  | Wed 3pm          |
+""")
 
+    with open("sample_data/client.csv", "rb") as f:
+        st.download_button("📥 Download Example Student CSV", f, file_name="student.csv")
+
+    st.markdown("""
 ---
 
 ### 🧠 How does scheduling work?
