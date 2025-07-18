@@ -84,4 +84,4 @@ If you have any questions, feel free to reach out using the contact link below.
 """)
 
 st.markdown("---")
-st.markdown("Built by Igor Ratnere — [Contact](mailto:igorratn@yahoo.com)")
+st.markdown("Built by Igor Ratneré — [Contact](mailto:igorratn@yahoo.com)")

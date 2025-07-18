@@ -80,5 +80,5 @@ MIT — see `LICENSE` file.
 
 ## 👋 About the Author
 
-Built by **Igor Ratnere**  
+Built by **Igor Ratneré**  
 📧 [igorratn@yahoo.com](mailto:igorratn@yahoo.com)
