@@ -28,6 +28,22 @@ if staff_file and client_file:
 
         st.download_button("⬇️ Download Schedule", result_df.to_csv(index=False), "schedule.csv", "text/csv")
 
+        # --- Share section ---
+        st.markdown("---")
+        st.markdown("### 📣 Help Others Find This Tool")
+        st.markdown("If this saved you time, share it with a colleague:")
+
+        st.code("https://optisched.streamlit.app", language="markdown")
+
+        st.markdown(
+            '[🐦 Tweet This](https://twitter.com/intent/tweet?text=Check+out+this+free+tool+for+tutoring+schedules:+https://optisched.streamlit.app)',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            '[📧 Email a Friend](mailto:?subject=Check%20out%20OptiSched&body=Try%20this%20free%20tool%20for%20tutoring%20scheduling:%20https://optisched.streamlit.app)',
+            unsafe_allow_html=True,
+        )
+
 with st.expander("❓ Help — How to Use OptiSched"):
     st.markdown("""
 ### 📁 What files should I upload?
