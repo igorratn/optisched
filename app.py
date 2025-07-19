@@ -110,4 +110,12 @@ If you have any questions, feel free to reach out using the contact link below.
 """)
 
 st.markdown("---")
+st.markdown("""
+🔒 **Disclaimer**
+
+OptiSched is provided free of charge and as-is, with no guarantees.  
+No user data is stored or collected.  
+Built as a personal project to support the education community.
+""")
+
 st.markdown("Built by Igor Ratneré — [Contact](mailto:igorratn@yahoo.com)")
